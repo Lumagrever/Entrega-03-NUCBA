@@ -7,7 +7,7 @@
  body {
      height: 100%;
      width: 100%;
-     background-color: #90CBBA;
+     background: linear-gradient(to right, #90CBBA, #D0767C);
      display: flex;
      flex-direction: column;
      flex-wrap: nowrap;
@@ -18,7 +18,7 @@
 
  nav {
      margin: 2%;
-     background-color: #80A725;
+     background: #D0767C;
      border-radius: 7px;
      display: flex;
      flex-direction: row;
@@ -28,10 +28,6 @@
      align-items: center;
      
  }
-
- nav :hover {
-     color: #90CBBA;
-}
 
 ul {
     width: 700px;
@@ -48,6 +44,13 @@ li {
     font-size: 25px;
 }
 
+li:hover {
+    padding: 7px;
+    border-radius: 7px;
+    background-color: #FFCD70;
+    transition: 0.5s;
+}
+
  img {
      height: 200px;
  }
@@ -56,4 +59,115 @@ li {
      text-decoration: none;
      color: black;
      padding: 10px;
+     font-size: 30px;
+ }
+
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    padding-left: 5px;
+    color: #D0767C
+}
+
+span {
+    font-size: 25px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+button {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #90CBBA;
+    margin: 10px;
+    cursor: pointer;
+    border-width: 3px;
+    border-style: solid;
+    font-size: 20px;
+}
+
+button:hover {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #D0767C;
+    cursor: pointer;
+    transition: 0.5s;
+    border-width: 3px;
+    border-style: solid;
+}
+
+#zapaimg {
+    border-radius: 10px;
+    height: 250px;
+    border-color: #90CBBA;
+    border-style: solid;
+    border-width: 5px;
+}
+
+#zapaimg:hover {
+    border-color: #D0767C;
+}
+
+ .hero {
+    display: flex;
+    flex-direction: column;
+ }
+
+ .hero-box1 {
+    margin-top: 150px;
+    margin-bottom: 150px;
+ }
+
+ .hero-box2 {
+    display: flex;
+    background-color: #D0767C;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 40px;
+ }
+
+ .hero-box2:hover {
+    background-color: #FFCD70;
+    transition: 1s;
+ }
+
+
+ .diboton {
+    display: flex;
+    justify-content: center;
+    background-color: #D0767C;
+ }
+
+ .diboton:hover {
+    background-color: #FFCD70;
+    transition: 1s;
+ }
+
+ .info {
+    margin-bottom: 100px;
+    background-color: #D0767C;
+    display: flex;
+    font-size: 20px;
+    padding: 100px;
+    text-align: justify;
+    align-items: center;
+    justify-content: space-around;
+ }
+
+ .info-box2 {
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    align-items: center;
+    justify-content: center;
+ }
+
+ .info:hover {
+    background-color: #FFCD70;
+    transition: 1s;
  }
