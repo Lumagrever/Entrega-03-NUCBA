@@ -26,12 +26,11 @@
      justify-content: space-between;
      justify-items: flex-end;
      align-items: center;
+     /*display: none;*/
  }
 
  nav i {
     font-size: 3rem;
-    color:#90CBBA;
-    
  }
 
 ul {
@@ -153,6 +152,14 @@ button:hover {
     transition: 1s;
  }
 
+ .btn-nav {
+    display: none;
+ }
+
+ .btn-nav :active + .li {
+    display: block;
+ }
+
  .info {
     margin-bottom: 100px;
     background-color: #D0767C;
@@ -208,8 +215,15 @@ button:hover {
     }
 }
 
+
 @media screen and (max-width: 814px) {
-    
+
+    li {
+        display: none;
+    }
+    .btn-nav {
+        display: block;
+    }
 }
 
 
