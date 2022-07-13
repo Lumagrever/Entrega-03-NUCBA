@@ -26,7 +26,12 @@
      justify-content: space-between;
      justify-items: flex-end;
      align-items: center;
-     
+ }
+
+ nav i {
+    font-size: 3rem;
+    color:#90CBBA;
+    
  }
 
 ul {
@@ -45,7 +50,7 @@ li {
 }
 
 li:hover {
-    padding: 7px;
+    padding: 1px;
     border-radius: 7px;
     background-color: #FFCD70;
     transition: 0.5s;
@@ -201,6 +206,10 @@ button:hover {
     .info-box2 p {
         font-size: 1.2rem;
     }
+}
+
+@media screen and (max-width: 814px) {
+    
 }
 
 
